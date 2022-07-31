@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ h1
+{color:red;
+}
+h2
+{
+   color:blue;
+   font-family:Impact
+}
+body
+{
+   background-color:LightBlue;
+   text-align:center;
+}
+</style>
+</head>
+<h1>JavaScript Program</h1>
+<p>
+     <b>
+      Javascript program to generate random integers between 1 to 10 display, the user then
+     prompted to input a guess number.
+     </b>
+</p>
+
+<script>
+ const num=Math.ceil(Math.random() * 10);
+console.log(num);
+const num1=prompt('Guess the number between 1 to 10:');
+if(num1==num)
+document.write("Matched")
+else
+document.write("Not Matched")
+</script>
+
+<h2>JavaScript Core</h2>
+
+<p id="demo">
+
+</p>
+<script>
+document.getElementById("demo").innerHTML = 
+"The full URL of this page is:<br>" + window.location.href;
+
+</script>
+
+<h2>Display Variables</h2>
+<p id="dd"></p>
+<script>
+  var a=10;
+  var b=15;
+  var d=b-a;
+document.getElementById("dd").innerHTML = "The value of d is : " +d;
+</script>
+
+<h2>DataTypes</h3>
+<p id = "vv"></p>
+<script>
+document.getElementById("vv").innerHTML = 
+  typeof  "usha" + "<br>"+
+  typeof     16   + "<br>"+
+  typeof   1.69 + "<br>"+
+  typeof    true + "<br>"+
+  typeof    d ;
+</script>
+<h1>Expression and operator</h1>
+<p style="color:orange";><b>Area of the circle</b> </p>
+<script>
+let pi = 3.1415926535897923846;
+function    circleArea(r)
+{
+ return pi* r * r;
+}
+let r , area;
+r=7;
+area=circleArea(r);
+document.write("Area of the circle is :"+area);
+</script>
+</body>
+</html>
